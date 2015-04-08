@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>pizzahut/shoppingcar</title>
+<link href="css/shoppingcar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">     
+function setCity(provinceCode) { 
+                                var j = 1; 
+                                var provinceCode = provinceCode / 10000; 
+                                for (i = 1; i <= aCity.length; i++) { 
+                                if (aCity[i - 1].substring(0, 2) == provinceCode && aCity[i - 1].substring(2, 6) != "0000" && aCity[i - 1].substring(4, 6) == "00") { 
+                                document.getElementById("city").options[j] = new Option(aCity[i - 1].substring(7, aCity[i - 1].length), aCity[i - 1].substring(0, 6)); 
+                                j++; 
+                                } 
+                                } 
+                                document.getElementById("city").length = j; 
+                                setCounty('000000'); 
+                                }  
+							
+function orderConf()
+{
+//need to post information to server	
+var r=confirm("成功提交订单!");
+if (r==true)
+  {
+  alert("下单成功!");
+  }
+else
+  {
+  alert("订单取消!");
+  }
+}
+
+	
+
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="header">pizzahut -> shopping car
+  <div id="login"><a href="login.html">登陆</a></div>
+  <div id="register"><a href="zhuce.html">注册</a></div>
+  </div>
+  <div id="goodslist">
+  <h3>您的订单</h3>
+  <table width="690" border="1" >
+  <tr>
+    <th scope="col" witdth="700">美食</th>
+    <th width="93" scope="col">单价</th>
+    <th width="130" scope="col">数目</th>
+    <th width="62" scope="col">总计</th>
+  </tr>
+  <tr>
+    <td width="377"></td>
+    <td width="93" >&nbsp;</td>
+    <td width="130" >&nbsp;</td>
+    <td width="62" >&nbsp;</td>
+  </tr>
+  <tr>
+    <td witdth="700" ></td>    
+    <td witdth="80" >应付金额：</td>
+    <tdcolspan="2"></td>
+  </tr>
+</table>
+</div>
+  <div id="information">
+  <form>  
+    <p>送餐地址：
+      <select name="province" id="province" onchange="setCity(this.value);" >
+        <option value="110000">北京</option>
+        <option value="120000">天津</option>
+        <option value="130000">河北</option>
+        <option value="140000">山西</option>
+        <option value="150000">内蒙古</option>
+        <option value="160000">河北</option>
+		  <option value="220000">吉林</option>
+		  <option value="230000">黑龙江</option>
+        <option value="310000">上海</option>
+        	<option value="320000">江苏</option>	
+			 <option value="330000">浙江</option>
+			 <option value="340000">安徽</option>
+			 <option value="350000">福建</option>
+			 <option value="360000"> 江西</option>
+			 <option value="370000">山东</option>
+			 <option value="410000">河南</option>
+			 <option value="420000">湖北</option>
+			 <option value="430000">湖南</option>
+			 <option value="440000">广东</option>
+			 <option value="450000">广西</option>
+			 <option value="460000">海南</option>
+			 <option value="500000">重庆</option>
+			 <option value="510000">四川</option>
+			 <option value="520000">贵州</option>
+			 <option value="530000">云南</option>
+			 <option value="540000">西藏</option>
+			 <option value="610000">陕西</option>
+			 <option value="620000">甘肃</option>        
+          <option value="630000|">青海</option>
+		    <option value="640000">宁夏</option>
+		    <option value="650000">新疆</option>
+		    <option value="710000">台湾</option>
+		    <option value="810000">香港</option>
+		    <option value="820000">澳门</option>
+          </select>
+      省（市）
+      <select name="city" id="city" onchange="setCounty(this.value)">  
+      <option value="beijing">北京</option>   
+      </select>
+      市
+      <select name="county" id="county" >
+      <option value="haidian">海淀</option>
+      </select>
+      区(县)
+      <input type="text" name="addresss" id="address"/>
+         
+      </p>
+    <p><br>
+      联系方式:
+      <input type="text" name="contact" id="contact"/></br>
+    </p>
+    <p><br>
+      支付方式：
+      <input type="button" name="payway"  value="餐到付款"/>    
+      <input type="button" name="payway" value="在线支付" /> 
+      </br> 
+    </p>
+    <p><br>
+      <input type="submit" name="submit" value="确认下单" onclick="orderConf()">
+     
+      <input type="button" name="reshop" value="继续购物" onclick=window.open("homepage.html")></br>
+    </p>
+    <p>&nbsp; </p>
+  </form>
+ 
+  
+  
+  <div id="confirm"></div>
+  <div id="reshop"></div>
+  </div>
+  <div id="footer">Copyright www.hyw.bupt.cn
+<br>contact us: hywpizzahut@126.com</br></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+      <head>
+          <title>详细信息界面</title>
+       </head>
+<script>
+function orderConf()
+{
+//need to post information to server	
+var r=confirm("成功加入购物车!");
+}
+</script>
+       <body bgcolor="#FFEFD5">
+          <table  align="right"> 
+            <tr>
+              <td>             <a href="main.html" target="_blank" rel="nofollow">我的pizzahut</a>
+              <span class="delimiter"></span>
+              
+              <a href="shoppingcar.html" target="_blank" rel="nofollow">购物车</a>
+              <span class="delimiter"></span>
+               
+              <a href="login.html" target="_blank" rel="nofollow">登录</a>
+              <span class="delimiter"></span>
+               
+              <a href="zhuce.html" target="_blank" rel="nofollow">注册</a></td>
+	     </tr>            </table>
+ 
+          <h1 align="center">详细食品信息</h1>
+          <hr>
+          <div  id="layer">
+             <table width="100%" align="center" border="3" bordercolor="FFFFFF">
+                <tr>
+                  <td   align="center" width="700">
+                      <img src="P104B022.jpg" width="60%" height="264">
+       
+       
+       
+                       <h2>简介</h2>
+                       <p><h3>摩洛哥风情鲜香烤肉比萨</h3>
+                          <h4>Morocco Flavored Roasted Chicken Pizza</h4>
+
+                          摩洛哥风味酱，鲜香烤鸡块，洋葱，青椒，红椒，芝士<br/>
+                          (本产品不在长沙、济南、沈阳、昆明等城市供应，敬请谅解)</p>
+                   </td>
+                   <td align="center" width="700">
+                      <!--<form>-->
+                            <table border="3" bgcolor="FFFFFF" bordercolor="FFEFDD" cellspacing="0" align="center">
+                            <caption><h2>订购区</h2></caption>
+                            <br/>
+                            <tr height="50">
+                               <td>39.0元/ 普通装 </td>
+                               <td><input name="name" type="text" id="name" size="10">份</td>
+                            </tr>
+                            <tr height="50">
+                               <td >61.0元/ 大装 </td>
+                               <td><input name="name" type="text" id="name" size="10">份</td>
+                            </tr>
+                            <tr height="50">
+                               <td  align="right"><input name="sure" type="submit" value="下单" onclick="orderConf()"></td>
+                               <td align="right"><input name="quxiao" type="reset" value="清除"></td>
+                            </tr>
+                            <tr height="50">
+                               <td colspan="2" align="center"><input name="return" type="submit" value="返回继续购买" onclick="window.location.href('pizzalist.html')"></td>
+                            </tr>
+                          </table>
+                        <!--</form>-->
+                      </td>
+                   </tr>
+                 </table>
+       
+              </div>
+       <hr>
+       <h2 align="center">顾客评价</h2>
+       <hr>
+       
+       
+</html>

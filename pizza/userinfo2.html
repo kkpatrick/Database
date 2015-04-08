@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equit="content-type" content="text/html; charset=gb2312"/>
+<title>修改密码</title>
+</head>
+<script>function close1() { window.open('login.html');                            window.opener=null;
+                           window.open('','_self');
+                           window.parent.close();} 
+        function close2() { window.open('homepage.html');                            window.opener=null;
+                           window.open('','_self');
+                           window.parent.close();} 
+</script>
+
+<body>
+
+<table align="right">
+      <tr>
+	  <td><input type="button" name="exit" value="退出" onclick="close1()"/>
+<td><input type="button" name="hp" value="返回首页" onclick="close2()"/>
+
+
+		</tr>
+</table>
+
+<h1>修改密码</h1><br/><br/>
+<h3>原密码：<h3/><input name="oldpw" type="text"/><br/>
+<h3>新密码：<h3/><input name="oldpw" type="text"/><br/>
+<h3>确认密码：<h3/><input name="oldpw" type="text"/><br/>
+<input name="sure" type="submit" value="确定">
+<input name="reset" type="reset" value="取消">
+</body>
+</html>

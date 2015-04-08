@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>homepage</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function Showpicture(name){
+element=document.getElementById("maincontent");
+switch(name) {
+case "pizza":  
+element.innerHTML="<img src='image/Pizza1.jpg' height='392' width='332'/><img src='image/Pizza2.jpg' height='392' width='332'/><img src='image/pizza3.png' height='392' width='332'/>";
+element.innerHTML+="<br><a href='pizzalist.html'> For more details, click here!</a></br>";
+break;
+case "mainfood":
+element.innerHTML="<img src='image/mainfood.jpg' height='392' width='332'/><img src='image/mainfood2.jpg' height='392' width='332'/><img src='image/mainfood3.jpg' height='392' width='332'/>";
+element.innerHTML+="<br><a href='mainfoodlist.html'> For more details, click here!</a></br>";
+break;
+case "snack":
+element.innerHTML="<img src='image/icecream1.jpg' height='392' width='332'/><img src='image/icecream2.jpg' height='392' width='332'/><img src='image/icecream3.jpg' height='392' width='332'/>";
+element.innerHTML+="<br><a href='snacklist.html'> For more details, click here!</a></br>";
+break;
+case "drink":
+element.innerHTML="<img src='image/drink1.jpeg' height='392' width='332'/><img src='image/drink2.jpg' height='392' width='332'/><img src='image/drink3.jpg' height='392' width='332'/>";
+element.innerHTML+="<br><a href='drinklist.html'> For more details, click here!</a></br>";
+break;
+case"others":
+element.innerHTML="<img src='image/others.jpg' height='392' width='332'/>";
+element.innerHTML+="<br><a href='otherlist.html'> For more details, click here!</a></br>";
+break;
+default:;
+}
+}
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+  <div id="logo"><img src="image/logo.PNG" width="255" height="69" alt="logo" longdesc="image/logo.PNG" /></div>
+  <h1>Welcome to our pizzahut!</h1>
+   <div id="user"><a href="main.html">我的pizzahut</a></div>
+  <div id="login"><a href="login.html">登陆</a></div>
+  <div id="register"><a href="zhuce.html">注册</a></div>
+  <div id="shoppingcar"><a href="shoppingcar.html">购物车</a></div>
+</div>
+<div id="nav"><img src="image/pizza.png" onclick="Showpicture('pizza')" width="190" height="99" alt="pizza" longdesc="image/pizza.png" />
+  <img src="image/mainfood.png" onclick="Showpicture('mainfood')"width="208" height="100" alt="mainfood" longdesc="image/mainfood.png" />
+  <img src="image/xiaochi.png" onclick="Showpicture('snack')" width="200" height="100" alt="snack" longdesc="image/xiaochi.png" />
+  <img src="image/drink.png"  onclick="Showpicture('drink')" width="200" height="100" alt="drink" longdesc="image/drink.png" />
+  <img src="image/others.png"  onclick="Showpicture('others')"width="195" height="100" alt="others" longdesc="image/others.png" /></div>
+<div id="maincontent">
+<marquee direction="left" scrollamount="7"><img src="image/front2.PNG" width="386" height="322" alt="新菜单" longdesc="image/front2.PNG" /><img src="image/front1.PNG" width="580" height="351" alt="实体店" longdesc="image/front1.PNG" />
+</marquee></div>
+<div id="footer">Copyright www.hyw.bupt.cn
+<br>contact us: hywpizzahut@126.com</br>
+</div>
+</div>
+</body>
+</html>

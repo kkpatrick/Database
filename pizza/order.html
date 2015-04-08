@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equit="content-type" content="text/html; charset=gb2312"/>
+<title>我的订单</title>
+</head>
+
+<script>function close1() { window.open('login.html');                            window.opener=null;
+                           window.open('','_self');
+                           window.parent.close();} 
+        function close2() { window.open('homepage.html');                            window.opener=null;
+                           window.open('','_self');
+                           window.parent.close();} 
+</script>
+
+<body>
+
+<table align="right">
+      <tr>
+	  <td><input type="button" name="exit" value="退出" onclick="close1()"/>
+<td><input type="button" name="hp" value="返回首页" onclick="close2()"/>
+
+
+		</tr>
+</table>
+
+<h2 align="center">我的订单</h2><br/><br/>
+
+<div class="order-title">
+     <table class="table-title" align="center"  width="500" bgcolor="#E0EEE0">
+                <tr>
+                  <td class="col1" width="250" height="50" align="left"><span class="item-name">饿单号:</span> </td>
+                  <td class="col2" width="250" height="50"><span class="item-name">下单时间:</span></td>
+                </tr>
+                <tr>
+                  <td class="col1" width="200" height="50"><span class="item-name">订单地址:</span></td>
+                  <td class="col2" width="200" height="50"><span class="item-name">联系电话:</span></td>
+                  <td class="col3" width="200" height="50"><span class="item-name">饿单备注:</span></td>
+                </tr>              
+            </table>
+</div>
+<br/>
+<div class="order-detail">
+     <table class="order-table table table-striped" align="center" width="500" bgcolor="#EAEAEA">
+                <thead>
+                  <tr>
+                    <th class="number" width="100" height="50" align="left">编号</th>
+                    <th class="col-name" width="100" height="50" align="left">食品名称</th>
+                    <th class="col-price" width="100" height="50">单价</th>
+                    <th class="col-quantity" width="100" height="50">数量</th>
+                    <th class="col-sub-total" width="100" height="50">小计</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                  </tr></tbody>
+      </table>
+</div>
+<br/><br/>
+<div class="trace">
+    <h3>订单跟踪:</h3><br/>
+    <table>
+     </table>
+</div>
+
+<div class="comment">
+<h3>请添加评价：</h3><br/>
+<textarea name="comment" cols="50" rows="5" onchange=alert("输入评论内容")></textarea>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+   <head>
+          <title>注册界面</title>
+   </head>
+<body bgcolor="#FFEFD5">
+<div align="center"><img src="newlogo.jpg" width="20%" height="100"></div>
+<br>
+<form name="form1"  method="post" action="">
+   <table witch="100%" border="5" bordercolor="FFEFD5" align="center" cellpadding="0" cellspacing="2" bgcolor="FFFFFF">
+   <caption><h1>注册表</h1>(以下均为必填项)</caption>
+      <hr>
+      <tr>
+         <td width="100" height="25">用户名：</td>
+         <td width="300" height="40"><input name="username" type="text" id="name" size="20"></td>
+      </tr>
+      <tr>
+        <td height="50">密码：</td>
+        <td><input name="password" type="password" size="10" maxlength="6"></td>
+      </tr>
+      <tr>
+        <td height="50">确认密码：</td>
+        <td><input name="repassword" type="password" size="10" maxlength="6"></td>
+      </tr>
+      <tr>
+        <td height="50">送货地址：</td>
+        <td>
+         
+          <select name="city" id="city">
+          <option value="北京" selected>北京</option>
+          </select>市
+          <select name="area" id="area">
+          <option value="海淀" selected>海淀</option>
+          <option value="昌平" selected>昌平</option>
+          <option value="朝阳" selected>朝阳</option>
+          <option value="长沙" selected>怀柔</option>
+          <option value="西城" selected>西城</option>
+          <option value="东城" selected>东城</option>
+          <option value="宣武" selected>宣武</option>
+          <option value="丰台" selected>丰台</option>
+          <option value="通州" selected>通州</option>
+          <option value="大兴" selected>大兴</option>
+          <option value="顺义" selected>顺义</option>
+          </select>区
+        </td>
+      <tr>
+        <td colspan="2"><textarea name="textarea" cols="50" rows="1"></textarea></td>
+      </tr>
+      </tr>
+      <tr>
+        <td height="50">联系电话：</td>
+        <td><input name="phonenumber" type="text" size="15" maxlength="11"></td>
+      </tr>
+      <tr>
+        <td height="50" colspan="2" align="center">
+        <input type="button" name="Submit" value="确定" onclick="window.location.href('homepage.html')"/>
+<input type="button" name="Cancle" value="取消" onclick="window.location.href('homepage.html')"/></td>
+      </tr>
+    </table>
+</form>
+
+</body>
+</html>
