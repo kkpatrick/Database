@@ -1,0 +1,28 @@
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+body { width:1050px; margin:0 auto; font-size:18px; font-family:Verdana; line-height:1;}
+ ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p { padding:0; margin:0;}
+ ul { list-style:none;}
+ img { border:0px;}
+ a { color:#05a; text-decoration:none;}
+ a:hover { color:#cffc00}
+#container { margin:0 auto;}
+
+/*header*/
+#header { height:70px; background:#ff0000; margin-bottom:8px;}
+#logo { float:left; }
+#wel{margin-button:5px;}
+ <div class="clearfloat"></div>
+ .clearfloat {clear:both;height:0;font-size: 1px;line-height: 0px;}
+ 
+/*main*/
+#maincontent {margin-top: 80px; margin-bottom:8px; height:500px; background:#FFFFff;overflow:auto; zoom:1;}
+#username{margin-left:50px;} 
+#password{margin-top:15px;margin-bottom:20px;margin-left:50px} 
+#login{float:leftt;margin-right:150px;margin-left:50px;}
+<div class="clearfloat"></div>
+ .clearfloat {clear:both;height:0;font-size: 1px;line-height: 0px;}
+
+/*footer*/
+ #footer { height:50px; background:#ff0000;text-align:center}
