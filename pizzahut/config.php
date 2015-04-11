@@ -1,7 +1,7 @@
 <?php
 $dbhost="localhost";
-$dbuser="root";
-$dbpassword="ningjing";
+$dbuser="testuser";
+$dbpassword="123";
 $dbdatabase="pizzahut";
 $config_basedir="http://localhost/pizzahut/";
 $config_sitename="PizzaHut";
